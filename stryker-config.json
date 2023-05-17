@@ -1,11 +1,5 @@
 {
-    "stryker-config": {
-      "project": "StrykerFunFactThursday.csproj",
-      "reporters": ["html", "dashboard"],
-      "thresholds": {
-        "high": 80,
-        "low": 60,
-        "break": 50
-      }
-    }
+  "stryker-config": {
+    "reporters": ["html","progress"]
   }
+}

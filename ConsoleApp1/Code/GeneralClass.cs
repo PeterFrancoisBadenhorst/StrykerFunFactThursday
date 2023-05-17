@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Code
 {
-    [TestFixture]
     public class GeneralClass
     {
         public int AddTwoNumbers(int a, int b)

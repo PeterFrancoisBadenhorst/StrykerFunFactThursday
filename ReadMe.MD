@@ -1,3 +1,5 @@
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FPeterFrancoisBadenhorst%2FStrykerFunFactThursday%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/PeterFrancoisBadenhorst/StrykerFunFactThursday/master)
+
 open in vs code
 
 press Shift + CTL + V (for reader view)
@@ -30,8 +32,7 @@ Prove code coverage is good
 
 open powershell
 
-navigate to 
-./ConsoleApp1/__Tests__
+navigate to the root, where the .sin is
 
 install
 run this > `dotnet tool install -g dotnet-stryker`
@@ -42,9 +43,13 @@ run this > `dotnet tool install dotnet-stryker`
 
 running
 run this to run stryker > `dotnet stryker`
+![Alt text](Images/powershell_D7ccSz31K1.png)
 
-![Alt text](Images/WindowsTerminal_5JVZtj3kPH.png)
 
+go here in the root
+![Alt text](Images/explorer_quvR1tWjOT.png)
+
+57bedd7f-bbd3-4668-a990-b82924c6ed8d
 
 
 
