@@ -20,7 +20,7 @@ namespace ConsoleApp1.__Tests__
             int actual = scriptRef.AddTwoNumbers(a, b);
             actual.Should().Be(expected);
         }
-        [TestCase(1, 0, -1)]
+        [TestCase(1, 0, 1)]
         [TestCase(3, 7, -4)]
         public void TestSubtractTwoNumbers(int a, int b, int expected)
         {
@@ -35,30 +35,17 @@ namespace ConsoleApp1.__Tests__
             actual.Should().Be(expected);
         }
         [Test]
-        public void TesDevideTwoNumbers_TypeAException(int a, int b, int expected)
+        public void TesDevideTwoNumbersException()
         {
-            Action act = () => scriptRef.DevideTwoNumbers_TypeA(10, 0);
+            Action act = () => scriptRef.DevideTwoNumbers(10, 0);
             act.Should().Throw<DivideByZeroException>();
         }
         [TestCase(1, 1, 1)]
-        [TestCase(3, 7, 21)]
-        public void TestDevideTwoNumbers_TypeA(int a, int b, int expected)
+        [TestCase(2, 2, 1)]
+        public void TestDevideTwoNumbers(int a, int b, int expected)
         {
-            int? actual = scriptRef.DevideTwoNumbers_TypeA(a, b);
+            int? actual = scriptRef.DevideTwoNumbers(a, b);
             Assert.AreEqual(expected, actual);
-        }
-        [Test]
-        public void TesDevideTwoNumbers_TypeBException(int a, int b, int expected)
-        {
-            Action act = () => scriptRef.DevideTwoNumbers_TypeB(10, 0);
-            act.Should().Throw<DivideByZeroException>();
-        }
-        [TestCase(1, 1, 1)]
-        [TestCase(3, 7, 21)]
-        public void TestDevideTwoNumbers_TypeB(int a, int b, int expected)
-        {
-            int? actual = scriptRef.DevideTwoNumbers_TypeB(a, b);
-            Assert.AreEqual(expected, actual);
-        }
+        }      
     }
 }

@@ -22,20 +22,8 @@ namespace ConsoleApp1.Code
         {
             return a * b;
         }
-        public int? DevideTwoNumbers_TypeA(int a, int b)
-        {
-            try
-            {
-                return a / b;
-            }
-            catch (DivideByZeroException e)
-            {
-                Console.WriteLine("Exception caught: {0}", e);
-
-            }
-            return null;
-        }
-        public int DevideTwoNumbers_TypeB(int a, int b)
+        
+        public int DevideTwoNumbers(int a, int b)
         {
             if (b == 0) throw new DivideByZeroException();
 
